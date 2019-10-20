@@ -137,6 +137,17 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
@@ -263,6 +274,17 @@
         
         <li class="m-nav-item">
 	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
 		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
@@ -380,7 +402,7 @@
 </style>
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-   
+
     <div class="carousel-item red white-text bg-cover about-cover" 
         style="background-image: url('/medias/featureimages/4.jpg');">
         <div class="container" style="right: 0px;left: 0px;">
@@ -398,7 +420,7 @@
             </div>
 
             <div class="cover-btns" style="top: 4vh">
-                <a href="https://yuque.com/easy-team/easywebpack" target="_blank" rel="noopener" class="waves-effect waves-light btn">
+                <a href="/easywebpack/index/" class="waves-effect waves-light btn">
                     <i class="fas fa-angle-double-down"></i>Start
                 </a>
 
@@ -453,11 +475,13 @@
 <script>
 $(function () {
     var coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
+    if (coverSlider) {
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+    } 
 });
 </script>
 
@@ -1996,7 +2020,7 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Egg + Vue 作品https://www.yuque.com/easy-team/egg-vue/open
+                                Egg + Vue 作品/egg-vue/open
                             
                         </div>
                         <div class="publish-info">
@@ -2420,7 +2444,7 @@ $(function () {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.8k</span>&nbsp;字
+                class="white-color">106.5k</span>&nbsp;字
             
             
             
@@ -2578,6 +2602,7 @@ $(function () {
 <script>
     (function () {
         var bp = document.createElement('script');
+        bp.async = true;
         var curProtocol = window.location.protocol.split(':')[0];
         if (curProtocol === 'https') {
             bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
@@ -2590,33 +2615,12 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: ""
-        });
-        daovoice('update');
-    </script>
     
 
     

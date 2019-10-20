@@ -137,6 +137,17 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
@@ -263,6 +274,17 @@
         
         <li class="m-nav-item">
 	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
 		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
@@ -380,7 +402,7 @@
 </style>
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-   
+
     <div class="carousel-item red white-text bg-cover about-cover" 
         style="background-image: url('/medias/featureimages/2.jpg');">
         <div class="container" style="right: 0px;left: 0px;">
@@ -398,7 +420,7 @@
             </div>
 
             <div class="cover-btns" style="top: 4vh">
-                <a href="https://yuque.com/easy-team/egg-react" target="_blank" rel="noopener" class="waves-effect waves-light btn">
+                <a href="/egg-react/init/" class="waves-effect waves-light btn">
                     <i class="fas fa-angle-double-down"></i>Start
                 </a>
 
@@ -453,11 +475,13 @@
 <script>
 $(function () {
     var coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
+    if (coverSlider) {
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+    } 
 });
 </script>
 
@@ -530,6 +554,216 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 基于 Egg + React + Webpack 服务端渲染开发指南1. 项目初始化1.1 通过 easywebpack-cli 脚手架初始化安装脚手架 npm install easywebpack-cli -g 命令行，然后就可以使用  easy 命令命令行运行 easy init选择 e...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/start">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="从零开始">
+                            
+                            <span class="card-title">从零开始</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                从零开始搭建 Egg + React + Webpack 服务端渲染项目1. 初始化环境安装 Node LST (8.x.x) 环境： https://nodejs.org/zh-cn2. 初始化 egg 项目https://github.com/eggjs/egg-init/blob/mas...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/node">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
+                            
+                            <span class="card-title">服务端渲染模式</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                目前 egg-view-react-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 React 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/web">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
+                            
+                            <span class="card-title">前端渲染模式</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Egg + React 客户端浏览器渲染模式调用 egg-view-react-ssr 的 renderClient 方法实现客户端浏览器渲染renderClient 表示 Node 服务端端只渲染一个包含 HTML，header，body 的一个简单 HTML 页面骨架， 具体页面内容由 R...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/asset">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="asset 前端渲染">
+                            
+                            <span class="card-title">asset 前端渲染</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                背景在 前端渲染模式 章节讲到了基于 React 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无效关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-r...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/html">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
+                            
+                            <span class="card-title">HTML前端渲染</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/config">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                            
+                            <span class="card-title">配置说明</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Webpack 标准配置// ${root}/webpack.config.js module.exports = {   entry: {     app: 'app/web/page/app/index.js',  // js 文件需要自己实现 react.render 逻辑     he...
                             
                         </div>
                         <div class="publish-info">
@@ -656,125 +890,20 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-react/about">
+                    <a href="/egg-react/antd">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="常见问题">
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="AntD 配置">
                             
-                            <span class="card-title">常见问题</span>
+                            <span class="card-title">AntD 配置</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                常见问题汇总AntD 按需加载与主题定制 以及 issue如果实现 Egg + React + Webpack  热更新？服务端渲染如何使用 react-loadabel 实现异步加载React 文件热更新入口配置模板import React from 'react'; import Reac...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/web">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
-                            
-                            <span class="card-title">前端渲染模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Egg + React 客户端浏览器渲染模式调用 egg-view-react-ssr 的 renderClient 方法实现客户端浏览器渲染renderClient 表示 Node 服务端端只渲染一个包含 HTML，header，body 的一个简单 HTML 页面骨架， 具体页面内容由 R...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/node">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
-                            
-                            <span class="card-title">服务端渲染模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                目前 egg-view-react-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 React 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/config">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
-                            
-                            <span class="card-title">配置说明</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Webpack 标准配置// ${root}/webpack.config.js module.exports = {   entry: {     app: 'app/web/page/app/index.js',  // js 文件需要自己实现 react.render 逻辑     he...
+                                项目示例： https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme按需加载依赖配置// ${root}/package.json {  &quot;devDependencies&quot;: {    &...
                             
                         </div>
                         <div class="publish-info">
@@ -831,90 +960,20 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-react/antd">
+                    <a href="/egg-react/typescript">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="AntD 配置">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="TypeScript">
                             
-                            <span class="card-title">AntD 配置</span>
+                            <span class="card-title">TypeScript</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                项目示例： https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme按需加载依赖配置// ${root}/package.json {  &quot;devDependencies&quot;: {    &...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/start">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="从零开始">
-                            
-                            <span class="card-title">从零开始</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                从零开始搭建 Egg + React + Webpack 服务端渲染项目1. 初始化环境安装 Node LST (8.x.x) 环境： https://nodejs.org/zh-cn2. 初始化 egg 项目https://github.com/eggjs/egg-init/blob/mas...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/asset">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="asset 前端渲染">
-                            
-                            <span class="card-title">asset 前端渲染</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                背景在 前端渲染模式 章节讲到了基于 React 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无效关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-r...
+                                骨架项目https://github.com/easy-team/egg-react-typescript-boilerplate多种渲染https://github.com/easy-team/egg-react-typescript-boilerplate/tree/awesome-ren...
                             
                         </div>
                         <div class="publish-info">
@@ -971,76 +1030,6 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-react/demo">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="社区作品">
-                            
-                            <span class="card-title">社区作品</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                easy-teamhttps://github.com/easy-team/egg-react-webpack-boilerplatehttps://github.com/easy-team/egg-react-typescript-boilerplateReact + Mobx 例子http...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-react/html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
-                            
-                            <span class="card-title">HTML前端渲染</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/egg-react/update">
                         <div class="card-image">
                             
@@ -1076,20 +1065,55 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-react/typescript">
+                    <a href="/egg-react/about">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="TypeScript">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="常见问题">
                             
-                            <span class="card-title">TypeScript</span>
+                            <span class="card-title">常见问题</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                骨架项目https://github.com/easy-team/egg-react-typescript-boilerplate多种渲染https://github.com/easy-team/egg-react-typescript-boilerplate/tree/awesome-ren...
+                                常见问题汇总AntD 按需加载与主题定制 以及 issue如果实现 Egg + React + Webpack  热更新？服务端渲染如何使用 react-loadabel 实现异步加载React 文件热更新入口配置模板import React from 'react'; import Reac...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-react/demo">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="社区作品">
+                            
+                            <span class="card-title">社区作品</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                easy-teamhttps://github.com/easy-team/egg-react-webpack-boilerplatehttps://github.com/easy-team/egg-react-typescript-boilerplateReact + Mobx 例子http...
                             
                         </div>
                         <div class="publish-info">
@@ -1128,7 +1152,7 @@ $(function () {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.8k</span>&nbsp;字
+                class="white-color">106.5k</span>&nbsp;字
             
             
             
@@ -1286,6 +1310,7 @@ $(function () {
 <script>
     (function () {
         var bp = document.createElement('script');
+        bp.async = true;
         var curProtocol = window.location.protocol.split(':')[0];
         if (curProtocol === 'https') {
             bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
@@ -1298,33 +1323,12 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: ""
-        });
-        daovoice('update');
-    </script>
     
 
     

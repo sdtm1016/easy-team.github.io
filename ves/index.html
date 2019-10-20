@@ -137,6 +137,17 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
@@ -263,6 +274,17 @@
         
         <li class="m-nav-item">
 	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
 		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
@@ -380,7 +402,7 @@
 </style>
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-   
+
     <div class="carousel-item red white-text bg-cover about-cover" 
         style="background-image: url('/medias/featureimages/1.jpg');">
         <div class="container" style="right: 0px;left: 0px;">
@@ -398,7 +420,7 @@
             </div>
 
             <div class="cover-btns" style="top: 4vh">
-                <a href="https://yuque.com/easy-team/ves" target="_blank" rel="noopener" class="waves-effect waves-light btn">
+                <a href="/ves/introduction/" class="waves-effect waves-light btn">
                     <i class="fas fa-angle-double-down"></i>Start
                 </a>
 
@@ -453,11 +475,13 @@
 <script>
 $(function () {
     var coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
+    if (coverSlider) {
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+    } 
 });
 </script>
 
@@ -641,6 +665,41 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/ves/debug">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="本地开发调试">
+                            
+                            <span class="card-title">本地开发调试</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Node 调试ves debug 启动应用然后复制   chrome-devtools://devtools/bundled/inspector.html?experiments=true&amp;v8only=true&amp;ws=127.0.0.1:9999/__ws_proxy__    到...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/ves/node">
                         <div class="card-image">
                             
@@ -709,41 +768,6 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/ves/debug">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="本地开发调试">
-                            
-                            <span class="card-title">本地开发调试</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Node 调试ves debug 启动应用然后复制   chrome-devtools://devtools/bundled/inspector.html?experiments=true&amp;v8only=true&amp;ws=127.0.0.1:9999/__ws_proxy__    到...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 
@@ -763,7 +787,7 @@ $(function () {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.8k</span>&nbsp;字
+                class="white-color">106.5k</span>&nbsp;字
             
             
             
@@ -921,6 +945,7 @@ $(function () {
 <script>
     (function () {
         var bp = document.createElement('script');
+        bp.async = true;
         var curProtocol = window.location.protocol.split(':')[0];
         if (curProtocol === 'https') {
             bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
@@ -933,33 +958,12 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: ""
-        });
-        daovoice('update');
-    </script>
     
 
     

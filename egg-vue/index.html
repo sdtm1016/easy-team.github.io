@@ -137,6 +137,17 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
@@ -263,6 +274,17 @@
         
         <li class="m-nav-item">
 	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
 		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
@@ -380,7 +402,7 @@
 </style>
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-   
+
     <div class="carousel-item red white-text bg-cover about-cover" 
         style="background-image: url('/medias/featureimages/3.jpg');">
         <div class="container" style="right: 0px;left: 0px;">
@@ -398,7 +420,7 @@
             </div>
 
             <div class="cover-btns" style="top: 4vh">
-                <a href="https://yuque.com/easy-team/egg-vue" target="_blank" rel="noopener" class="waves-effect waves-light btn">
+                <a href="/egg-vue/init/" class="waves-effect waves-light btn">
                     <i class="fas fa-angle-double-down"></i>Start
                 </a>
 
@@ -453,11 +475,13 @@
 <script>
 $(function () {
     var coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
+    if (coverSlider) {
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+    } 
 });
 </script>
 
@@ -618,20 +642,160 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-vue/render">
+                    <a href="/egg-vue/node">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="渲染模式">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
                             
-                            <span class="card-title">渲染模式</span>
+                            <span class="card-title">服务端渲染模式</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Egg + Vue 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + Vue 服务端 Node 渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，更快的首屏渲染，相比传统的模板引擎，更好的组件化，前后端模板共用。 同时 MVVM 数据驱动方式有着更快的开发效率。总体来说，MVVM 框架的服务端渲染技术比较适合有一定交互性，且对SEO...
+                                Egg + Vue 服务端 Node 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/web">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
+                            
+                            <span class="card-title">前端渲染模式</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                浏览器渲染模式指的是Node 端只会根据包含html, head, body节点信息的 layout 文件输出骨架内容， 页面的实际内容交给浏览器去渲染。调用 egg-view-vue-ssr 的 renderClient 方法实现客户端浏览器渲染在使用上面, 客户端浏览器渲染模式只需要把 render 改成 renderClient。 正常情况下, 能进行 render 运行的, renderClient  方式也能正常运行。Webpack 配置优化，提高构建速度在 ${root}/webpack...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/html">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
+                            
+                            <span class="card-title">HTML前端渲染</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/asset">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
+                            
+                            <span class="card-title">asset 渲染模式</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/fls9r6">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自定义前端渲染">
+                            
+                            <span class="card-title">自定义前端渲染</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
                             
                         </div>
                         <div class="publish-info">
@@ -667,6 +831,76 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 项目开发在 egg-vue-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 app 目录是一个单页面服务端渲染例子，其他是简单的 Vue 服务端渲染...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/config">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                            
+                            <span class="card-title">配置说明</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/qpeiow">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="入口实现">
+                            
+                            <span class="card-title">入口实现</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                服务端渲染模式需要对同一份 vue 文件构建出两份 JSBundle 文件出来，一份给 Node 渲染使用，一份给浏览器渲染使用，但 Node 和浏览器文件初始化代码是不一样的，这就需要我们针对入口代码进行分别实现。这里提供三种实现方案，请根据项目需要选择合适的方案。方案一： 完全自定义入口代...
                             
                         </div>
                         <div class="publish-info">
@@ -828,146 +1062,6 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-vue/version">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="插件使用">
-                            
-                            <span class="card-title">插件使用</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                插件流程https://www.yuque.com/easy-team/egg-vue/build插件介绍egg-webpack 用于在 egg 项目中启动 Webpack 编译服务，具体流程请见 构建流程 。 该插件只在本地启用。 该插件除了深度结合 easywebpack 体系使用， 也可...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/about">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="相关问题">
-                            
-                            <span class="card-title">相关问题</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                常见问题 issue 汇总服务端 SEO 设置问题 文件打包部署问题Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-webpack-boilerplate/issues/125a...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/web">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
-                            
-                            <span class="card-title">前端渲染模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                浏览器渲染模式指的是Node 端只会根据包含html, head, body节点信息的 layout 文件输出骨架内容， 页面的实际内容交给浏览器去渲染。调用 egg-view-vue-ssr 的 renderClient 方法实现客户端浏览器渲染在使用上面, 客户端浏览器渲染模式只需要把 render 改成 renderClient。 正常情况下, 能进行 render 运行的, renderClient  方式也能正常运行。Webpack 配置优化，提高构建速度在 ${root}/webpack...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/node">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
-                            
-                            <span class="card-title">服务端渲染模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Egg + Vue 服务端 Node 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/egg-vue/i18n">
                         <div class="card-image">
                             
@@ -1038,20 +1132,55 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/egg-vue/config">
+                    <a href="/egg-vue/version">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="插件使用">
                             
-                            <span class="card-title">配置说明</span>
+                            <span class="card-title">插件使用</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
+                                插件流程/egg-vue/build插件介绍egg-webpack 用于在 egg 项目中启动 Webpack 编译服务，具体流程请见 构建流程 。 该插件只在本地启用。 该插件除了深度结合 easywebpack 体系使用， 也可...
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                sky
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/egg-vue/about">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="相关问题">
+                            
+                            <span class="card-title">相关问题</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                常见问题 issue 汇总服务端 SEO 设置问题 文件打包部署问题Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-webpack-boilerplate/issues/125a...
                             
                         </div>
                         <div class="publish-info">
@@ -1141,146 +1270,6 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/asset">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
-                            
-                            <span class="card-title">asset 渲染模式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/qpeiow">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="入口实现">
-                            
-                            <span class="card-title">入口实现</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                服务端渲染模式需要对同一份 vue 文件构建出两份 JSBundle 文件出来，一份给 Node 渲染使用，一份给浏览器渲染使用，但 Node 和浏览器文件初始化代码是不一样的，这就需要我们针对入口代码进行分别实现。这里提供三种实现方案，请根据项目需要选择合适的方案。方案一： 完全自定义入口代...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/fls9r6">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自定义前端渲染">
-                            
-                            <span class="card-title">自定义前端渲染</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/egg-vue/html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
-                            
-                            <span class="card-title">HTML前端渲染</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                sky
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 
@@ -1300,7 +1289,7 @@ $(function () {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.8k</span>&nbsp;字
+                class="white-color">106.5k</span>&nbsp;字
             
             
             
@@ -1458,6 +1447,7 @@ $(function () {
 <script>
     (function () {
         var bp = document.createElement('script');
+        bp.async = true;
         var curProtocol = window.location.protocol.split(':')[0];
         if (curProtocol === 'https') {
             bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
@@ -1470,33 +1460,12 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: ""
-        });
-        daovoice('update');
-    </script>
     
 
     
