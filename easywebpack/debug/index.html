@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="开发调试, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="开发调试, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="
 当我们使用 easywebpack 时， 遇到构建问题时，我们可以通过 easywebpack-cli 的  easy print 命令检查一下生成的 webpack config 配置是否正确。
 
@@ -28,7 +28,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -176,7 +182,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -993,12 +999,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">开发调试</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">开发调试</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1030,7 +1031,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <ul>
@@ -1258,19 +1259,19 @@ easy <span class="token function">kill</span> 7001,9000,9001</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/config/">
+                <a href="/easywebpack/speed/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="webpack.config.js">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="极速编译">
                         
-                        <span class="card-title">webpack.config.js</span>
+                        <span class="card-title">极速编译</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webpack.config.js
+                            DLL 公共提取Webpack 通过 DLLPlugin 和 DLLReferencePlugin 可以实现公共类库的单独提取，能极大大提升了构建的速度.只需要在 webpack.config.js 文件添加 dll 节点配置即可完成 dll 整个流程。module.exports = {   dll:[&#x27;vue&#x27;,&#x27;vuex&#x27;,&#x27;axios&#x27;] } 详细方案：Webpack DLL 工程化实现开启 cache-loader...
                         
                     </div>
                     <div class="publish-info">
@@ -1295,19 +1296,19 @@ easy <span class="token function">kill</span> 7001,9000,9001</code></pre>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/react_project/">
+                <a href="/easywebpack/babel7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="React 工程方案">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Babel 升级">
                         
-                        <span class="card-title">React 工程方案</span>
+                        <span class="card-title">Babel 升级</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装 easywebpack-cli 工具npm install easywebpack-cli -g添加 ${app_root}/.babelrc 文件具体根据实际情况添加相关 babel 插件配置，以下仅仅是举例. 详细配置见：https://easy-team.github.io...
+                            easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容性等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。方式一：基于 easy-team 插件模式 Babel 快速升级方案为了更方便升级 Babel7...
                         
                     </div>
                     <div class="publish-info">
@@ -1554,12 +1555,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

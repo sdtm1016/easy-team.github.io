@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Webpack 4 编译内存泄漏, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Webpack 4 编译内存泄漏, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="增加内存堆栈大小(只能缓解，不能根除)&#34;scripts&#34;: {
   &#34;dev&#34;:  &#34;node --max_old_space_size=4096 index.js&#34;
 }
@@ -28,7 +28,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -176,7 +182,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -718,12 +724,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Webpack 4 编译内存泄漏</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Webpack 4 编译内存泄漏</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -755,7 +756,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="增加内存堆栈大小-只能缓解，不能根除"><a href="#增加内存堆栈大小-只能缓解，不能根除" class="headerlink" title="增加内存堆栈大小(只能缓解，不能根除)"></a>增加内存堆栈大小(只能缓解，不能根除)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token string">"scripts"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -919,19 +920,19 @@ heapdump<span class="token punctuation">.</span><span class="token function">wri
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/blog/az519d/">
+                <a href="/blog/cdal6o/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="页面资源加载">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Egg + Web 自定义前端渲染">
                         
-                        <span class="card-title">页面资源加载</span>
+                        <span class="card-title">Egg + Web 自定义前端渲染</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            首屏测试window.addEventListener(&#x27;DOMContentLoaded&#x27;, ()=&gt;{         const t = window.performance.timing;         console.log(&#x27;first pain time[painTime-navigationStart]:&#x27;, window.painTime - t.navigationStart);         console.log(&#x2...
+                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
                         
                     </div>
                     <div class="publish-info">
@@ -956,19 +957,19 @@ heapdump<span class="token punctuation">.</span><span class="token function">wri
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/blog/syh43v/">
+                <a href="/blog/nrswgq/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="npm 常用命令">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Android 与 Flutter 入门开发实践指引">
                         
-                        <span class="card-title">npm 常用命令</span>
+                        <span class="card-title">Android 与 Flutter 入门开发实践指引</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原文： http://hubcarl.github.io/blog/2018/03/22/npm/npm 初始化 package.jsonnpm initnpm install 安装npm installnpm instal同时安装 package.json 配置 dependencies 和...
+                            项目集成Android 集成 Flutter 项目通过 Android Studio 创建 Andriod 原生应用 AndroidApp通过 Android Studio 创建 New Flutter Project, 选择 Flutter Module，创建 Flutter Module ...
                         
                     </div>
                     <div class="publish-info">
@@ -1215,12 +1216,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

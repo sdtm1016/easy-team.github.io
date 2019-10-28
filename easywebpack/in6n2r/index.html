@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS 文件打包, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="JS 文件打包, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="我们经常会遇到单独对 JS 打包的场景，比如 es6 写的 npm 包需要构建成 es5 模式.  easywebpack 也提供了对应的解决方案： easywebpack-js
 基于 easywebpack-js 构建
 配置编写
@@ -29,7 +29,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -177,7 +183,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -994,12 +1000,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">JS 文件打包</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">JS 文件打包</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1031,7 +1032,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <p>我们经常会遇到单独对 JS 打包的场景，比如 es6 写的 npm 包需要构建成 es5 模式.  easywebpack 也提供了对应的解决方案：<a href="https://github.com/hubcarl/easywebpack-js" target="_blank" rel="noopener"> easywebpack-js</a></p>
@@ -1208,19 +1209,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/js_project/">
+                <a href="/easywebpack/html_project/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="JS 打包工程方案">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="HTML 工程方案">
                         
-                        <span class="card-title">JS 打包工程方案</span>
+                        <span class="card-title">HTML 工程方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们经常会遇到单独对 JS 打包的场景，比如 es6 写的 npm 包需要构建成 es5 模式.  easywebpack 也提供了对应的解决方案： easywebpack-js基于 easywebpack-js 构建配置编写// build/index.js const easywebpac...
+                            easywebpack-html  纯静态页面构建解决方案支持纯静态页面构建支持 nunjucks 模版方式构建如何利用 easywebpack-cli工具快速获得一个骨架项目使用easy-cli你将得到一个具备以下能力的骨架项目:基于Nunjucks模版引擎的模版项目。Why? 借助模版引擎...
                         
                     </div>
                     <div class="publish-info">
@@ -1245,19 +1246,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/rlm0ki/">
+                <a href="/easywebpack/deps/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="交流反馈">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="资源依赖">
                         
-                        <span class="card-title">交流反馈</span>
+                        <span class="card-title">资源依赖</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            欢迎有兴趣的开发者参与！邮箱 hubcarl@126.comGitHubhttps://github.com/hubcarl知乎https://zhuanlan.zhihu.com/easywebpackQQ群有问题可以直接在在语雀评论回复(^_^)
+                            easywebpack 静态资源 manifest 文件easywebpack 3.5.0 新增自定义插件 webpack-manifest-resource-plugin 替换 webpack-manifest-plugin。 之前的 manifest 依赖关系是在 Egg 运行期间解析的，...
                         
                     </div>
                     <div class="publish-info">
@@ -1504,12 +1505,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

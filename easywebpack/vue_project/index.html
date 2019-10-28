@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vue 工程方案, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Vue 工程方案, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="安装 easywebpack-cli 工具npm install easywebpack-cli -g
 添加 ${app_root}/.babelrc 文件
 具体根据实际情况添加相关 babel 插件配置，以下仅仅是举例. 详细配置见：ht">
@@ -27,7 +27,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -992,12 +998,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Vue 工程方案</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Vue 工程方案</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1029,7 +1030,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h3 id="安装-easywebpack-cli-工具"><a href="#安装-easywebpack-cli-工具" class="headerlink" title="安装 easywebpack-cli 工具"></a>安装 easywebpack-cli 工具</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> easywebpack-cli -g</code></pre>
@@ -1283,19 +1284,19 @@ easy build --server</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/problem/">
+                <a href="/easywebpack/weex_project/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="常见问题">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Weex 工程方案">
                         
-                        <span class="card-title">常见问题</span>
+                        <span class="card-title">Weex 工程方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Babel 快速升级问题为了更方便升级 Babel7, 同时尽量减少配置且无需安装 @babel 依赖，@easy-team 模式直接内置Babel 7 的相关依赖，只需要把 easywebpack 依赖模式改成 @easy-team/easywebpack 模式，如果代码中直接依赖了也请一并...
+                            easywebpack-weex 基于 easywebpack 的 Weex Native 和 Weex Web 打包构建解决方案.安装$ npm i easywebpack-weex --save-dev使用const weex = require('easywebpack-weex'); ...
                         
                     </div>
                     <div class="publish-info">
@@ -1320,19 +1321,19 @@ easy build --server</code></pre>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/mgzlq5/">
+                <a href="/easywebpack/react_project/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="多页面举例">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="React 工程方案">
                         
-                        <span class="card-title">多页面举例</span>
+                        <span class="card-title">React 工程方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于 easywebpack-cli 模式构建Vue前端渲染项目一. 全局安装 easywebpack-cli 插件npm i easywebpack-cli  -g 安装成功以后, 就可以在命令行中使用 easy 或 easywebpack 命令, 比如 easy build, easy server, easy print 等二. 添加 webpack.config.js 配置在项目根目录添加 webpack.config.js 文件, 添加如下配置const path = require(&#x2...
+                            安装 easywebpack-cli 工具npm install easywebpack-cli -g添加 ${app_root}/.babelrc 文件具体根据实际情况添加相关 babel 插件配置，以下仅仅是举例. 详细配置见：https://easy-team.github.io...
                         
                     </div>
                     <div class="publish-info">
@@ -1579,12 +1580,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

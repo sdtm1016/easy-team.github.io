@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="devServer, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="devServer, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="开发服务easywebpack 整个体系提供的开发构建服务是基于 koa 实现的，用于支持各种类型项目(服务端渲染，前端渲染，静态页面，本地内存编译等)，实现了 内存编译，热更新，发布编译，[代理](https://webpack.js.o">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -173,7 +179,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -990,12 +996,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">devServer</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">devServer</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1027,7 +1028,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="开发服务"><a href="#开发服务" class="headerlink" title="开发服务"></a>开发服务</h2><pre><code>easywebpack 整个体系提供的开发构建服务是基于 koa 实现的，用于支持各种类型项目(服务端渲染，前端渲染，静态页面，本地内存编译等)，实现了 内存编译，热更新，发布编译，[代理](https://webpack.js.org/configuration/dev-server/#devserver-proxy)，[historyApiFallback](https://webpack.js.org/configuration/dev-server/#devserver-historyapifallback)等功能，其中代理和historyApiFallback配置只在纯前端项目起作用。具体实现请见 [webpack-tool ](https://github.com/easy-team/webpack-tool)插件。 easywebpack-cli  和 [egg-webpack](https://github.com/easy-team/egg-webpack) 都依赖该插件。</code></pre><ul>
@@ -1188,19 +1189,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/deps/">
+                <a href="/easywebpack/cssmodule/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="资源依赖">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Css Module">
                         
-                        <span class="card-title">资源依赖</span>
+                        <span class="card-title">Css Module</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            easywebpack 静态资源 manifest 文件easywebpack 3.5.0 新增自定义插件 webpack-manifest-resource-plugin 替换 webpack-manifest-plugin。 之前的 manifest 依赖关系是在 Egg 运行期间解析的，...
+                            easywepack4easywebpack4 默认提供 /\.module\.(css|less|scss|stylus)/  的文件规范的 CSS Module 特性，把 css module 的样式文件改成 /\.module\.(css|less|scss|stylus)/  规范，这...
                         
                     </div>
                     <div class="publish-info">
@@ -1225,19 +1226,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/cdn/">
+                <a href="/easywebpack/v5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CDN 构建">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="easywebpack5">
                         
-                        <span class="card-title">CDN 构建</span>
+                        <span class="card-title">easywebpack5</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基本配置easywebpack 提供了 cdn 配置节点, 只需要配置 cdn 地址即可(cdn地址会覆盖publicPath地址).配置如下:easywebpack3 配置后 dev，test， prod 模式都会生效, 一般通过变量控制 cdn 节点的配置
+                            方案说明Webpack5适配工作webpack 4  -&gt; webpack 5 插件列表升级 webpack 为 5升级相关依赖插件为最新版本 webpack-tool easywebpack easywebpack-cli easywebpack-vue easywebpack-rea...
                         
                     </div>
                     <div class="publish-info">
@@ -1484,12 +1485,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

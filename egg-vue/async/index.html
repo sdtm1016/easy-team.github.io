@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="异步加载, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="异步加载, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Component Async Load Render / 组件异步加载渲染1. JavaScript File Code Spliting 代码分离Webpack打包是把所有js代码打成一个js文件，我们可以通过 CommonsChunk">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -173,7 +179,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -624,12 +630,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">异步加载</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">异步加载</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -661,7 +662,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="Component-Async-Load-Render-组件异步加载渲染"><a href="#Component-Async-Load-Render-组件异步加载渲染" class="headerlink" title="Component Async Load Render / 组件异步加载渲染"></a>Component Async Load Render / 组件异步加载渲染</h2><h3 id="1-JavaScript-File-Code-Spliting-代码分离"><a href="#1-JavaScript-File-Code-Spliting-代码分离" class="headerlink" title="1. JavaScript File Code Spliting 代码分离"></a>1. JavaScript File Code Spliting 代码分离</h3><p>Webpack打包是把所有js代码打成一个js文件，我们可以通过 <code>CommonsChunkPlugin</code> 分离出公共组件，但这远远不够。 实际业务开发时，一些主要页面内容往往比较多， 而且会引入第三方组件或者监控脚本。其中有些内容的展示不再首屏或者监控脚本等对用户不是那么重要的脚本我们可以通过 <code>require.ensure</code> 代码分离延迟加载。在webpack在构建时，解析到<code>require.ensure</code> 时，会单独针对引入的js资源单独构建出chunk文件，这样就能从主js文件里面分离出来。 然后页面加载完后， 通过script标签的方式动态插入到文档中。</p>
@@ -818,19 +819,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/render/">
+                <a href="/egg-vue/asset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="渲染模式">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
                         
-                        <span class="card-title">渲染模式</span>
+                        <span class="card-title">asset 渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + Vue 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + Vue 服务端 Node 渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，更快的首屏渲染，相比传统的模板引擎，更好的组件化，前后端模板共用。 同时 MVVM 数据驱动方式有着更快的开发效率。总体来说，MVVM 框架的服务端渲染技术比较适合有一定交互性，且对SEO...
+                            背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
                         
                     </div>
                     <div class="publish-info">
@@ -855,19 +856,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/seo/">
+                <a href="/egg-vue/about/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="SEO实现">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="相关问题">
                         
-                        <span class="card-title">SEO实现</span>
+                        <span class="card-title">相关问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + Vue SSR SEO 实现MVVM 服务端渲染相比前端渲染，支持SEO，更快的首屏渲染，相比传统的模板引擎，更好的组件化，前后端模板共用。在 Egg + Vue 的方案里面, HTML head 里面 meta 信息也作为 Vue 服务端渲染的一部分, 和普通的数据绑定没有什么差别。在实现上面, 考虑到页面有统一的 HTML, header, footer, body 骨架, 可以结合 Vue 的 slot 封装成一个统一的 layout 组件。一. layout...
+                            常见问题 issue 汇总服务端 SEO 设置问题 文件打包部署问题Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-webpack-boilerplate/issues/125a...
                         
                     </div>
                     <div class="publish-info">
@@ -1114,12 +1115,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

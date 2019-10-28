@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Service Worker, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Service Worker, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Egg + Vue/React SSR 使用 service workereasywebpack 默认生成的 service-worker.js 是在 ${app_root}/public/service-worker.js这里. 这样 s">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -173,7 +179,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -624,12 +630,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Service Worker</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Service Worker</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -661,7 +662,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="Egg-Vue-React-SSR-使用-service-worker"><a href="#Egg-Vue-React-SSR-使用-service-worker" class="headerlink" title="Egg + Vue/React SSR 使用 service worker"></a>Egg + Vue/React SSR 使用 service worker</h2><p><code>easywebpack</code> 默认生成的 <code>service-worker.js</code> 是在 <code>${app_root}/public/service-worker.js</code>这里. 这样 <code>service-worker.js</code> 访问路径是 <a href="http://127.0.0.1:7001/public/service-worker.js%E3%80%82" target="_blank" rel="noopener">http://127.0.0.1:7001/public/service-worker.js。</a></p>
@@ -813,19 +814,19 @@ exports<span class="token punctuation">.</span>webpack <span class="token operat
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/node/">
+                <a href="/egg-vue/render/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="渲染模式">
                         
-                        <span class="card-title">服务端渲染模式</span>
+                        <span class="card-title">渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + Vue 服务端 Node 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，...
+                            Egg + Vue 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + Vue 服务端 Node 渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，更快的首屏渲染，相比传统的模板引擎，更好的组件化，前后端模板共用。 同时 MVVM 数据驱动方式有着更快的开发效率。总体来说，MVVM 框架的服务端渲染技术比较适合有一定交互性，且对SEO...
                         
                     </div>
                     <div class="publish-info">
@@ -850,19 +851,19 @@ exports<span class="token punctuation">.</span>webpack <span class="token operat
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/i18n/">
+                <a href="/egg-vue/qpeiow/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="i18n 国际化支持">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="入口实现">
                         
-                        <span class="card-title">i18n 国际化支持</span>
+                        <span class="card-title">入口实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在 Egg + Vue  SSR 方案中，可以使用 vue-i18n 实现国际化支持， 使用前请先阅读以下文档：http://kazupon.github.io/vue-i18n/guide/started.html#htmlhttp://kazupon.github.io/vue-i18n/guide/started.html#javascriptEgg + Vue 实现国际化安装依赖npm install vue-i18n --save 编写 cn 和 en 语言文件中文配置：egg-vue...
+                            服务端渲染模式需要对同一份 vue 文件构建出两份 JSBundle 文件出来，一份给 Node 渲染使用，一份给浏览器渲染使用，但 Node 和浏览器文件初始化代码是不一样的，这就需要我们针对入口代码进行分别实现。这里提供三种实现方案，请根据项目需要选择合适的方案。方案一： 完全自定义入口代...
                         
                     </div>
                     <div class="publish-info">
@@ -1109,12 +1110,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="项目一览, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="项目一览, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Egg + Vue 服务端渲染项目地址：https://github.com/easy-team/egg-vue-webpack-boilerplate
 
 Egg + Vue 前端渲染项目地址：https://github.com/easy">
@@ -27,7 +27,13 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -626,12 +632,7 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">项目一览</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">项目一览</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -663,7 +664,7 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="Egg-Vue-服务端渲染"><a href="#Egg-Vue-服务端渲染" class="headerlink" title="Egg + Vue 服务端渲染"></a>Egg + Vue 服务端渲染</h2><p>项目地址：<a href="https://github.com/easy-team/egg-vue-webpack-boilerplate" target="_blank" rel="noopener">https://github.com/easy-team/egg-vue-webpack-boilerplate</a></p>
@@ -796,19 +797,19 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/asset/">
+                <a href="/egg-vue/config/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
                         
-                        <span class="card-title">asset 渲染模式</span>
+                        <span class="card-title">配置说明</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
+                            webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
                         
                     </div>
                     <div class="publish-info">
@@ -833,19 +834,19 @@ Egg + Vue 前端渲染项目地址：https://github.com/easy">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-react/init/">
+                <a href="/egg-vue/asset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="快速开始">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
                         
-                        <span class="card-title">快速开始</span>
+                        <span class="card-title">asset 渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于 Egg + React + Webpack 服务端渲染开发指南1. 项目初始化1.1 通过 easywebpack-cli 脚手架初始化安装脚手架 npm install easywebpack-cli -g 命令行，然后就可以使用  easy 命令命令行运行 easy init选择 e...
+                            背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
                         
                     </div>
                     <div class="publish-info">
@@ -1092,12 +1093,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

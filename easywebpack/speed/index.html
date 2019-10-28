@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="极速编译, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="极速编译, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="DLL 公共提取Webpack 通过 **DLLPlugin 和 DLLReferencePlugin 可以实现公共类库的单独提取，能极大大提升了构建的速度.**
 只需要在 webpack.config.js 文件添加 dll 节点配置即可">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -174,7 +180,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -991,12 +997,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">极速编译</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">极速编译</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1028,7 +1029,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h3 id="DLL-公共提取"><a href="#DLL-公共提取" class="headerlink" title="DLL 公共提取"></a>DLL 公共提取</h3><p><strong>Webpack 通过 **<a href="https://doc.webpack-china.org/plugins/dll-plugin/" target="_blank" rel="noopener">DLLPlugin 和 DLLReferencePlugin</a></strong> 可以实现公共类库的单独提取，能极大大提升了构建的速度.**</p>
@@ -1166,19 +1167,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/native/">
+                <a href="/easywebpack/upgrade/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="快速开始">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="升级指南">
                         
-                        <span class="card-title">快速开始</span>
+                        <span class="card-title">升级指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            easywebpack 获取原生 Webpack 配置
+                            Webpack 3 到 Webpack 4 经过重大更新，对应 easwebpack3 到 easywebpack4 也有相对性的更新，主要包括以下3点：Webpack 版本升级导致的配置优化和优化修改easywebpack 新特性支持和配置简化easywebpack 遗留问题修复以及去掉历史兼容 ...
                         
                     </div>
                     <div class="publish-info">
@@ -1203,19 +1204,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/config/">
+                <a href="/easywebpack/debug/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="webpack.config.js">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="开发调试">
                         
-                        <span class="card-title">webpack.config.js</span>
+                        <span class="card-title">开发调试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webpack.config.js
+                            当我们使用 easywebpack 时， 遇到构建问题时，我们可以通过 easywebpack-cli 的  easy print 命令检查一下生成的 webpack config 配置是否正确。默认读取项目根目录下的 webpack.config.js 配置, 你可以通过 -f  参数指定指...
                         
                     </div>
                     <div class="publish-info">
@@ -1462,12 +1463,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

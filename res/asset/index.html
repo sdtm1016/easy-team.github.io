@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Asset 渲染模式, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Asset 渲染模式, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="React + Nunjucks Asset前端渲染
 https://easy-team.github.io/egg-react/asset  
 
@@ -28,7 +28,13 @@ ${root}/app/controller/render.tsimport { Contr">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -176,7 +182,7 @@ ${root}/app/controller/render.tsimport { Contr">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -531,17 +537,12 @@ ${root}/app/controller/render.tsimport { Contr">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Asset 渲染模式</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Asset 渲染模式</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>Date:&nbsp;&nbsp;
-                        2019-10-19
+                        2019-10-20
                     </div>
     
                     
@@ -568,7 +569,7 @@ ${root}/app/controller/render.tsimport { Contr">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="React-Nunjucks-Asset前端渲染"><a href="#React-Nunjucks-Asset前端渲染" class="headerlink" title="React + Nunjucks Asset前端渲染"></a>React + Nunjucks Asset前端渲染</h2><blockquote>
@@ -720,24 +721,24 @@ ${root}/app/controller/render.tsimport { Contr">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/res/csr/">
+                <a href="/egg-vue/web/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="客户端渲染(CSR)">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
                         
-                        <span class="card-title">客户端渲染(CSR)</span>
+                        <span class="card-title">前端渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            React Node 端代码实现服务端只渲染 HTML 的 HTML，HEAD，BODY 标签结构，具体 BODY 内容由 ctx.renderClient 进行 React 客户端渲染; 文件名为 webpack entry 的文件名，注入的页面 JS 文件为 app/public 文件。$...
+                            浏览器渲染模式指的是Node 端只会根据包含html, head, body节点信息的 layout 文件输出骨架内容， 页面的实际内容交给浏览器去渲染。调用 egg-view-vue-ssr 的 renderClient 方法实现客户端浏览器渲染在使用上面, 客户端浏览器渲染模式只需要把 render 改成 renderClient。 正常情况下, 能进行 render 运行的, renderClient  方式也能正常运行。Webpack 配置优化，提高构建速度在 ${root}/webpack...
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
                         </span>
                         <span class="publish-author">
                             
@@ -757,24 +758,24 @@ ${root}/app/controller/render.tsimport { Contr">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/res/vlw7bu/">
+                <a href="/res/develop/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="常见问题">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="项目开发">
                         
-                        <span class="card-title">常见问题</span>
+                        <span class="card-title">项目开发</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            默认集成插件res-cliegg-view-react-ssregg-view-nunjucksegg-webpackegg-webpack-react说明：Node 开发遵循 Eggjs  所有已有项目规范, 参考：https://github.com/easy-team/res-aweso...
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
                             </span>
                         <span class="publish-author">
                             
@@ -1016,12 +1017,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

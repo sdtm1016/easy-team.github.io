@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="快速开始, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="快速开始, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="easywebpack 获取原生 Webpack 配置easywebpack.getWebpackConfig(config)
 
 这种获取方式是指通过解决方案获取配置, 参数 config 支持如下三种配置:
@@ -28,7 +28,13 @@ config 为 null 或">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -176,7 +182,7 @@ config 为 null 或">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -993,12 +999,7 @@ config 为 null 或">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">快速开始</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">快速开始</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1030,7 +1031,7 @@ config 为 null 或">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="easywebpack-获取原生-Webpack-配置"><a href="#easywebpack-获取原生-Webpack-配置" class="headerlink" title="easywebpack 获取原生 Webpack 配置"></a>easywebpack 获取原生 Webpack 配置</h2><pre class=" language-javascript"><code class="language-javascript">easywebpack<span class="token punctuation">.</span><span class="token function">getWebpackConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
@@ -1210,19 +1211,19 @@ config 为 string 时<span class="token punctuation">,</span> 表示指定 webpa
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/html_project/">
+                <a href="/easywebpack/postcss/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="HTML 工程方案">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PostCss">
                         
-                        <span class="card-title">HTML 工程方案</span>
+                        <span class="card-title">PostCss</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            easywebpack-html  纯静态页面构建解决方案支持纯静态页面构建支持 nunjucks 模版方式构建如何利用 easywebpack-cli工具快速获得一个骨架项目使用easy-cli你将得到一个具备以下能力的骨架项目:基于Nunjucks模版引擎的模版项目。Why? 借助模版引擎...
+                            默认配置postcss.config.js
                         
                     </div>
                     <div class="publish-info">
@@ -1247,19 +1248,19 @@ config 为 string 时<span class="token punctuation">,</span> 表示指定 webpa
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/speed/">
+                <a href="/easywebpack/html_project/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="极速编译">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="HTML 工程方案">
                         
-                        <span class="card-title">极速编译</span>
+                        <span class="card-title">HTML 工程方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DLL 公共提取Webpack 通过 DLLPlugin 和 DLLReferencePlugin 可以实现公共类库的单独提取，能极大大提升了构建的速度.只需要在 webpack.config.js 文件添加 dll 节点配置即可完成 dll 整个流程。module.exports = {   dll:[&#x27;vue&#x27;,&#x27;vuex&#x27;,&#x27;axios&#x27;] } 详细方案：Webpack DLL 工程化实现开启 cache-loader...
+                            easywebpack-html  纯静态页面构建解决方案支持纯静态页面构建支持 nunjucks 模版方式构建如何利用 easywebpack-cli工具快速获得一个骨架项目使用easy-cli你将得到一个具备以下能力的骨架项目:基于Nunjucks模版引擎的模版项目。Why? 借助模版引擎...
                         
                     </div>
                     <div class="publish-info">
@@ -1506,12 +1507,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

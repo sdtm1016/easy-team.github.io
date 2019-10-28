@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="服务端渲染模式, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="服务端渲染模式, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="目前 egg-view-react-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式
 Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 React 组件在 Node 服务端直接编译成完整的HTML, 然">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,13 @@ Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 Re
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -174,7 +180,7 @@ Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 Re
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -601,12 +607,7 @@ Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 Re
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">服务端渲染模式</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">服务端渲染模式</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -638,7 +639,7 @@ Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 Re
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <p>目前 <a href="https://github.com/easy-team/egg-view-react-ssr" target="_blank" rel="noopener">egg-view-react-ssr</a> 支持 <strong>服务端渲染模式</strong> 和 <strong>前端渲染模式</strong> 两种渲染模式</p>
@@ -782,19 +783,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-react/online/">
+                <a href="/egg-react/web/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="部署流程">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
                         
-                        <span class="card-title">部署流程</span>
+                        <span class="card-title">前端渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            开发部署新项目开发在 egg-react-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 spa 目录是一个单页面服务端渲染例子，其他是简单的 Re...
+                            Egg + React 客户端浏览器渲染模式调用 egg-view-react-ssr 的 renderClient 方法实现客户端浏览器渲染renderClient 表示 Node 服务端端只渲染一个包含 HTML，header，body 的一个简单 HTML 页面骨架， 具体页面内容由 R...
                         
                     </div>
                     <div class="publish-info">
@@ -1078,12 +1079,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

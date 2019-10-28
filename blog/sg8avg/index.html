@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Babel 构建优化, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Babel 构建优化, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="在进行 Egg + Vue 进行 SSR 模式开发时，运行 npm run dev  后你会看到如下界面， 启动了两个 Webpack 构建实例：Node 模式 和 Web 模式。SSR 运行需要 Webapck 单独构建 target: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -173,7 +179,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -715,12 +721,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Babel 构建优化</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Babel 构建优化</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -752,7 +753,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <p>在进行 Egg + Vue 进行 SSR 模式开发时，运行 <code>npm run dev</code>  后你会看到如下界面， 启动了两个 Webpack 构建实例：Node 模式 和 Web 模式。SSR 运行需要 Webapck 单独构建 <code>target: node</code>   和 <code>target: web</code>  主要的差异在于 Webpack需要处理 require 机制以及磨平 Node 和 浏览器运行环境的差异。</p>
@@ -946,19 +947,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/blog/syh43v/">
+                <a href="/blog/ruv09m/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="npm 常用命令">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Egg SSR Webpack 内存编译热更新实现">
                         
-                        <span class="card-title">npm 常用命令</span>
+                        <span class="card-title">Egg SSR Webpack 内存编译热更新实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原文： http://hubcarl.github.io/blog/2018/03/22/npm/npm 初始化 package.jsonnpm initnpm install 安装npm installnpm instal同时安装 package.json 配置 dependencies 和...
+                            1. 背景在用 Node.js + Webpack 构建的方式进行开发时, 我们希望能实现修改代码能实时刷新页面UI的效果. 这个特性 Webpack本身是支持的, 而且基于koa也有现成的 koa-webpack-hot-middleware 和 koa-webpack-dev-middle...
                         
                     </div>
                     <div class="publish-info">
@@ -983,19 +984,19 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/blog/kiygy5/">
+                <a href="/blog/rh45zo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Vue SSR 组件加载">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="React Native Android源码解读和交互原理分析">
                         
-                        <span class="card-title">Vue SSR 组件加载</span>
+                        <span class="card-title">React Native Android源码解读和交互原理分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Node 端渲染提示 window/document 没有定义业务场景首先来看一个简单的 Vue 组件
+                            原文：http://hubcarl.github.io/blog/2016/08/28/react-native-js/首先来看一下一张完整Native与JavaScript交互原理图:在 React Native App中，在应用启动时根据 ReactPackage 会自动生成 JavaSc...
                         
                     </div>
                     <div class="publish-info">
@@ -1242,12 +1243,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

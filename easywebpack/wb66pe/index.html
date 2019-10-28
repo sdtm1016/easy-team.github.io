@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="静态资源, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="静态资源, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="import 方式引入在组件中直接 import js 和 css 公共文件, 这种引入会进行 Webpack 编译，比如压缩
 import  &#39;asset/css/global.css&#39;
 import  &#39;asset/js/common.">
@@ -27,7 +27,13 @@ import  &#39;asset/js/common.">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ import  &#39;asset/js/common.">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -992,12 +998,7 @@ import  &#39;asset/js/common.">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">静态资源</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">静态资源</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1029,7 +1030,7 @@ import  &#39;asset/js/common.">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="import-方式引入"><a href="#import-方式引入" class="headerlink" title="import 方式引入"></a>import 方式引入</h2><p>在组件中直接 import js 和 css 公共文件, 这种引入会进行 Webpack 编译，比如压缩</p>
@@ -1206,19 +1207,19 @@ import  &#39;asset/js/common.">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/babel/">
+                <a href="/easywebpack/html/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Babel 配置">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="静态页面构建">
                         
-                        <span class="card-title">Babel 配置</span>
+                        <span class="card-title">静态页面构建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Babel 版本说明easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。方式一：使用 @easy-team 插件依赖为了更方便升级 Babel7, 同...
+                            nunjucks 模板构建为纯静态页面项目基于 easywebpack-cli 方式构建在用 HTML 模板构建时, 有一个不好的地方就是不能以组件的方式复用, 如是考虑通过渲染模版编译成HTML静态模版. 目前常见的模板引擎有 nunjucks 等渲染模板, 而且社区也有对应的 Webpack loader 支持. 同时 easywebpack-html 也内置支持了, 我们执行只需要打开开关即可.在项目根目录添加 webpack.config.js 文件中启动 nunjucks loader...
                         
                     </div>
                     <div class="publish-info">
@@ -1465,12 +1466,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

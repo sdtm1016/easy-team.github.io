@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="社区作品, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="社区作品, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="easy-team
 https://github.com/easy-team/egg-react-webpack-boilerplate
 https://github.com/easy-team/egg-react-typescript-b">
@@ -27,7 +27,13 @@ https://github.com/easy-team/egg-react-typescript-b">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ https://github.com/easy-team/egg-react-typescript-b">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -602,12 +608,7 @@ https://github.com/easy-team/egg-react-typescript-b">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">社区作品</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">社区作品</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -639,7 +640,7 @@ https://github.com/easy-team/egg-react-typescript-b">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="easy-team"><a href="#easy-team" class="headerlink" title="easy-team"></a>easy-team</h2><ul>
@@ -761,19 +762,19 @@ https://github.com/easy-team/egg-react-typescript-b">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-react/update/">
+                <a href="/egg-react/build/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="升级更新">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="构建流程">
                         
-                        <span class="card-title">升级更新</span>
+                        <span class="card-title">构建流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            发布历史https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/CHANGELOG.md版本特性easywebpack体系通过 @easy-team 模式内置 Babel 7 方案 骨架分支： master，...
+                            基于Egg+React+Webpack构建流程1. 本地Egg项目启动首先执行node index.js 或者 npm run dev 启动 Egg应用在 Egg Agent 里面启动koa服务, 同时在koa服务里面启动Webpack编译服务挂载Webpack内存文件读取方法覆盖本地文件读取...
                         
                     </div>
                     <div class="publish-info">
@@ -1057,12 +1058,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

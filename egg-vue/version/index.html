@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="插件使用, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="插件使用, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="插件流程
 https://easy-team.github.io/egg-vue/build
 
@@ -30,7 +30,13 @@ https://easy-team.github.io/egg-vue/build
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -178,7 +184,7 @@ https://easy-team.github.io/egg-vue/build
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -629,12 +635,7 @@ https://easy-team.github.io/egg-vue/build
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">插件使用</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">插件使用</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -666,7 +667,7 @@ https://easy-team.github.io/egg-vue/build
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="插件流程"><a href="#插件流程" class="headerlink" title="插件流程"></a>插件流程</h2><blockquote>
@@ -892,19 +893,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/init/">
+                <a href="/res/develop/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="快速开始">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="项目开发">
                         
-                        <span class="card-title">快速开始</span>
+                        <span class="card-title">项目开发</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于 Egg + Vue + Webpack 服务端渲染开发指南1. 项目初始化1.1 easywebpack-cli 脚手架初始化项目安装脚手架 npm install easywebpack-cli -g 命令行，然后就可以使用 easywebpack 或 easy 命令命令行运行 eas...
+                            默认集成插件res-cliegg-view-react-ssregg-view-nunjucksegg-webpackegg-webpack-react说明：Node 开发遵循 Eggjs  所有已有项目规范, 参考：https://github.com/easy-team/res-aweso...
                         
                     </div>
                     <div class="publish-info">
@@ -929,19 +930,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/online/">
+                <a href="/egg-vue/typescript/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="部署流程">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="TypeScript">
                         
-                        <span class="card-title">部署流程</span>
+                        <span class="card-title">TypeScript</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            项目开发在 egg-vue-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 app 目录是一个单页面服务端渲染例子，其他是简单的 Vue 服务端渲染...
+                            TypeScript 构建支持Node 启用 typescript 编译 egg-bin dev -r egg-ts-helper/register 实现开发 tsc -p tsconfig.json 编译package.json 运行脚本
                         
                     </div>
                     <div class="publish-info">
@@ -1188,12 +1189,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

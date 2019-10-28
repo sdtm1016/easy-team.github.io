@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="本地开发, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="本地开发, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Node 调试
 
 res debug 启动应用
@@ -32,7 +32,13 @@ res debug 启动应用
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -180,7 +186,7 @@ res debug 启动应用
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -535,12 +541,7 @@ res debug 启动应用
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">本地开发</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">本地开发</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -572,7 +573,7 @@ res debug 启动应用
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="Node-调试"><a href="#Node-调试" class="headerlink" title="Node 调试"></a>Node 调试</h2><blockquote>
@@ -734,19 +735,19 @@ res print <span class="token operator">-</span>n module<span class="token punctu
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/res/txcemm/">
+                <a href="/res/framework/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="项目配置">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="公共代码实现">
                         
-                        <span class="card-title">项目配置</span>
+                        <span class="card-title">公共代码实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            应用项目规范遵循 Egg 项目开发规范，其中 app/web 目录为前端代码, config/res.config.js  为 webpack 配置文件本地开发 Webpack 内存构建，发布构建静态资源在 app/public  目录，服务端在 app/view  目录TypeScript ...
+                            React Render 初始化辅助代码${root}/app/web/framework/app.tsximport React, { Component } from 'react'; import ReactDOM from 'react-dom'; // 热更新 import { Ap...
                         
                     </div>
                     <div class="publish-info">
@@ -1030,12 +1031,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

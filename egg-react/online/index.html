@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="部署流程, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="部署流程, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="开发部署新项目开发在 egg-react-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：
 
 app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 ">
@@ -27,7 +27,13 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -602,12 +608,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">部署流程</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">部署流程</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -639,7 +640,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="开发部署"><a href="#开发部署" class="headerlink" title="开发部署"></a>开发部署</h2><h3 id="新项目开发"><a href="#新项目开发" class="headerlink" title="新项目开发"></a>新项目开发</h3><p>在 <a href="https://github.com/hubcarl/egg-react-webpack-boilerplate" target="_blank" rel="noopener">egg-react-webpack-boilerplate</a> 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：</p>
@@ -836,19 +837,19 @@ easy <span class="token function">zip</span></code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-react/web/">
+                <a href="/egg-vue/about/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="前端渲染模式">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="相关问题">
                         
-                        <span class="card-title">前端渲染模式</span>
+                        <span class="card-title">相关问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + React 客户端浏览器渲染模式调用 egg-view-react-ssr 的 renderClient 方法实现客户端浏览器渲染renderClient 表示 Node 服务端端只渲染一个包含 HTML，header，body 的一个简单 HTML 页面骨架， 具体页面内容由 R...
+                            常见问题 issue 汇总服务端 SEO 设置问题 文件打包部署问题Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-webpack-boilerplate/issues/125a...
                         
                     </div>
                     <div class="publish-info">
@@ -873,19 +874,19 @@ easy <span class="token function">zip</span></code></pre>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-react/node/">
+                <a href="/egg-react/start/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="从零开始">
                         
-                        <span class="card-title">服务端渲染模式</span>
+                        <span class="card-title">从零开始</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目前 egg-view-react-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式Egg + React 服务端 SSR 渲染模式这里服务端渲染指的是编写的 React 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支...
+                            从零开始搭建 Egg + React + Webpack 服务端渲染项目1. 初始化环境安装 Node LST (8.x.x) 环境： https://nodejs.org/zh-cn2. 初始化 egg 项目https://github.com/eggjs/egg-init/blob/mas...
                         
                     </div>
                     <div class="publish-info">
@@ -1132,12 +1133,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

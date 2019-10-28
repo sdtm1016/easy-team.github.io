@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="升级指南, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="升级指南, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Webpack 3 到 Webpack 4 经过重大更新，对应 easwebpack3 到 easywebpack4 也有相对性的更新，主要包括以下3点：
 
 Webpack 版本升级导致的配置优化和优化修改
@@ -29,7 +29,13 @@ easywebpack 新特性">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -177,7 +183,7 @@ easywebpack 新特性">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -994,12 +1000,7 @@ easywebpack 新特性">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">升级指南</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">升级指南</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1031,7 +1032,7 @@ easywebpack 新特性">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <p>Webpack 3 到 Webpack 4 经过重大更新，对应 easwebpack3 到 easywebpack4 也有相对性的更新，主要包括以下3点：</p>
@@ -1439,19 +1440,19 @@ easywebpack 新特性">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/proxy/">
+                <a href="/easywebpack/speed/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="域名代理">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="极速编译">
                         
-                        <span class="card-title">域名代理</span>
+                        <span class="card-title">极速编译</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本地开发域名代理构建支持前提：代理域名能够映射到本机ip地址的功能需要你自己在电脑上面配置。如果是实际的存在的域名，理论上面就不需要自己配置域名映射。该功能只在 Egg 应用构建本地开发使用。在 Egg SSR 应用开发时，Egg 应用的访问地址， 静态资源构建的地址， HMR 地址都是 ip...
+                            DLL 公共提取Webpack 通过 DLLPlugin 和 DLLReferencePlugin 可以实现公共类库的单独提取，能极大大提升了构建的速度.只需要在 webpack.config.js 文件添加 dll 节点配置即可完成 dll 整个流程。module.exports = {   dll:[&#x27;vue&#x27;,&#x27;vuex&#x27;,&#x27;axios&#x27;] } 详细方案：Webpack DLL 工程化实现开启 cache-loader...
                         
                     </div>
                     <div class="publish-info">
@@ -1698,12 +1699,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

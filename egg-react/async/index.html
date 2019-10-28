@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="组件异步加载, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="组件异步加载, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="issue: react-loadable 怎么加入这个骨架中 #23安装依赖npm install react-loadable --save
 实现异步组件// async-image.jsx
 import React, { Compon">
@@ -27,7 +27,13 @@ import React, { Compon">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ import React, { Compon">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -602,12 +608,7 @@ import React, { Compon">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">组件异步加载</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">组件异步加载</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -639,7 +640,7 @@ import React, { Compon">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h1 id="issue-react-loadable-怎么加入这个骨架中-23"><a href="#issue-react-loadable-怎么加入这个骨架中-23" class="headerlink" title="issue: react-loadable 怎么加入这个骨架中 #23"></a>issue: <a href="https://github.com/easy-team/egg-react-webpack-boilerplate/issues/23" target="_blank" rel="noopener">react-loadable 怎么加入这个骨架中 </a><a href="https://github.com/easy-team/egg-react-webpack-boilerplate/issues/23" target="_blank" rel="noopener">#23</a></h1><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> react-loadable --save</code></pre>
@@ -800,19 +801,19 @@ import React, { Compon">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-react/seo/">
+                <a href="/egg-react/about/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SEO 实现">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="常见问题">
                         
-                        <span class="card-title">SEO 实现</span>
+                        <span class="card-title">常见问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + React SSR SEO 实现MVVM 服务端渲染相比前端渲染，支持 SEO，更快的首屏渲染，相比传统的模板引擎，更好的组件化，前后端模板共用。在 Egg + React 的方案里面, HTML head 里面 meta 信息也作为 React 服务端渲染的一部分, 和普通的数据...
+                            常见问题汇总AntD 按需加载与主题定制 以及 issue如果实现 Egg + React + Webpack  热更新？服务端渲染如何使用 react-loadabel 实现异步加载React 文件热更新入口配置模板import React from 'react'; import Reac...
                         
                     </div>
                     <div class="publish-info">
@@ -837,19 +838,19 @@ import React, { Compon">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-react/html/">
+                <a href="/egg-react/antd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="AntD 配置">
                         
-                        <span class="card-title">HTML前端渲染</span>
+                        <span class="card-title">AntD 配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            项目示例： https://github.com/easy-team/egg-react-webpack-boilerplate/tree/antd-theme按需加载依赖配置
                         
                     </div>
                     <div class="publish-info">
@@ -1096,12 +1097,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

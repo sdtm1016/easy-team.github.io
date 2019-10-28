@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="社区作品, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="社区作品, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="游戏中心小米游戏中心
 easy-team 
 
@@ -32,7 +32,13 @@ https://github.com">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -180,7 +186,7 @@ https://github.com">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -631,12 +637,7 @@ https://github.com">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">社区作品</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">社区作品</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -668,7 +669,7 @@ https://github.com">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h3 id="游戏中心"><a href="#游戏中心" class="headerlink" title="游戏中心"></a><a href="http://g.aligames.com/" target="_blank" rel="noopener">游戏中心</a></h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://cdn.nlark.com/yuque/0/2019/png/116733/1564206427689-3b583f49-3e54-4e2f-830a-5da473b02125.png#align=left&display=inline&height=559&name=image.png&originHeight=1230&originWidth=2838&size=1211491&status=done&width=1289.9999720400035" alt="image.png"></h3><h3 id="小米游戏中心"><a href="#小米游戏中心" class="headerlink" title="小米游戏中心"></a><a href="http://game.xiaomi.com/" target="_blank" rel="noopener">小米游戏中心</a></h3><p><img src="https://cdn.nlark.com/yuque/0/2019/png/116733/1564206365719-202e631c-6e9d-4b58-95cd-8efc490da74a.png#align=left&display=inline&height=415&name=image.png&originHeight=914&originWidth=2028&size=840583&status=done&width=921.8181618383112" alt="image.png"></p>
@@ -793,19 +794,19 @@ https://github.com">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/typescript/">
+                <a href="/egg-vue/online/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="TypeScript">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="部署流程">
                         
-                        <span class="card-title">TypeScript</span>
+                        <span class="card-title">部署流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            TypeScript 构建支持Node 启用 typescript 编译 egg-bin dev -r egg-ts-helper/register 实现开发 tsc -p tsconfig.json 编译package.json 运行脚本
+                            项目开发在 egg-vue-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 app 目录是一个单页面服务端渲染例子，其他是简单的 Vue 服务端渲染...
                         
                     </div>
                     <div class="publish-info">
@@ -830,19 +831,19 @@ https://github.com">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/config/">
+                <a href="/egg-vue/node/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="服务端渲染模式">
                         
-                        <span class="card-title">配置说明</span>
+                        <span class="card-title">服务端渲染模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
+                            Egg + Vue 服务端 Node 渲染模式目前 egg-view-vue-ssr 支持 服务端渲染模式 和 前端渲染模式 两种渲染模式这里服务端渲染指的是编写的 Vue 组件在 Node 服务端直接编译成完整的HTML, 然后直接输出给浏览器。MVVM 服务端渲染相比前端渲染，支持SEO，...
                         
                     </div>
                     <div class="publish-info">
@@ -1089,12 +1090,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

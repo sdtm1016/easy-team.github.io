@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="easywebpack3, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="easywebpack3, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="版本说明Webpack3
 插件说明
 easywebpack: ^3.x.x
@@ -35,7 +35,13 @@ easy">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -183,7 +189,7 @@ easy">
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -1000,12 +1006,7 @@ easy">
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">easywebpack3</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">easywebpack3</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1037,7 +1038,7 @@ easy">
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="版本说明"><a href="#版本说明" class="headerlink" title="版本说明"></a>版本说明</h2><p>Webpack3</p>
@@ -1175,19 +1176,19 @@ easy">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/html/">
+                <a href="/easywebpack/rpd7gu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="静态页面构建">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="构建速度">
                         
-                        <span class="card-title">静态页面构建</span>
+                        <span class="card-title">构建速度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            nunjucks 模板构建为纯静态页面项目基于 easywebpack-cli 方式构建在用 HTML 模板构建时, 有一个不好的地方就是不能以组件的方式复用, 如是考虑通过渲染模版编译成HTML静态模版. 目前常见的模板引擎有 nunjucks 等渲染模板, 而且社区也有对应的 Webpack loader 支持. 同时 easywebpack-html 也内置支持了, 我们执行只需要打开开关即可.在项目根目录添加 webpack.config.js 文件中启动 nunjucks loader...
+                            检测构建速度最新的 easywebpack-cli@4.0.0 可以通过 easy build --speed  检测 Webpack 各 loader 和 plugin 处理耗时。DLL 公共提取Webpack 通过 DLLPlugin 和 DLLReferencePlugin 可以实现公共类库的单独提取，能极大大提升了构建的速度.只需要在 webpack.config.js 文件添加 dll 节点配置即可完成 dll 整个流程。module.exports = {   dll:[&#x27;vue...
                         
                     </div>
                     <div class="publish-info">
@@ -1212,19 +1213,31 @@ easy">
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/abtuv0/">
+                <a href="/easywebpack/v4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="基础配置">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="easywebpack4">
                         
-                        <span class="card-title">基础配置</span>
+                        <span class="card-title">easywebpack4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在使用相关方案时, 请在项目中添加 babel  和 postcss  基础配置文件添加
+                            方案说明
+Webpack4
+
+插件版本
+easywebpack: ^4.x.x
+
+easywebpack-cli: ^4.x.x
+
+easywebpack-vue: ^4.x.x
+
+easywebpack-react: ^4.x.x
+
+ea
                         
                     </div>
                     <div class="publish-info">
@@ -1471,12 +1484,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

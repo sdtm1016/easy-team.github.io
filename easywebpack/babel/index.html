@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Babel 配置, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Babel 配置, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="Babel 版本说明easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。
 
 方式一：使用 @ea">
@@ -27,7 +27,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -992,12 +998,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Babel 配置</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Babel 配置</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1029,7 +1030,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h3 id="Babel-版本说明"><a href="#Babel-版本说明" class="headerlink" title="Babel 版本说明"></a>Babel 版本说明</h3><p>easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。<br /></p>
@@ -1217,19 +1218,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/wb66pe/">
+                <a href="/easywebpack/hot/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="静态资源">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="热更新">
                         
-                        <span class="card-title">静态资源</span>
+                        <span class="card-title">热更新</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            import 方式引入在组件中直接 import js 和 css 公共文件, 这种引入会进行 Webpack 编译，比如压缩import  &#x27;asset/css/global.css&#x27; import  &#x27;asset/js/common.js&#x27; 文件拷贝模式借助 copy-webpack-plugin  进行文件拷贝，copy 插件已在 easywebpack@4.8.5 内置支持，然后页面通过 link  标签引入。注意拷贝的文件不会压缩和hash...
+                            easywebpack 是通过 koa-webpack-hot-middleware 和 koa-webpack-dev-middleware 插件实现热更新机制。具体实现封装成独立 webpack-tool 插件，该插件除了集成在 easywebpack 里面，同时也可以单独使用。下面详细说...
                         
                     </div>
                     <div class="publish-info">
@@ -1254,20 +1255,19 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/entry/">
+                <a href="/easywebpack/base/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="entry">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="扩展配置">
                         
-                        <span class="card-title">entry</span>
+                        <span class="card-title">扩展配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            entry 基本配置config.entry : {String|Object}  Webpack 构建入口文件配置
-这里的entry 对 Webpack 的 entry 进行了增强， 除了支持 webpack 原生 Object(key:
+                            webpack.config.js 常用配置1. Egg框架配置
                         
                     </div>
                     <div class="publish-info">
@@ -1514,12 +1514,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

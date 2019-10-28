@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="从零开始, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="从零开始, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="从零开始搭建 Egg + React + Webpack 服务端渲染项目1. 初始化环境安装 Node LST (8.x.x) 环境： https://nodejs.org/zh-cn
 2. 初始化 egg 项目https://github">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -174,7 +180,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -601,12 +607,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">从零开始</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">从零开始</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -638,7 +639,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="从零开始搭建-Egg-React-Webpack-服务端渲染项目"><a href="#从零开始搭建-Egg-React-Webpack-服务端渲染项目" class="headerlink" title="从零开始搭建 Egg + React + Webpack 服务端渲染项目"></a>从零开始搭建 Egg + React + Webpack 服务端渲染项目</h2><h3 id="1-初始化环境"><a href="#1-初始化环境" class="headerlink" title="1. 初始化环境"></a>1. 初始化环境</h3><p>安装 Node LST (8.x.x) 环境： <a href="https://nodejs.org/zh-cn" target="_blank" rel="noopener">https://nodejs.org/zh-cn</a></p>
@@ -1011,19 +1012,19 @@ app<span class="token punctuation">.</span><span class="token keyword">get</span
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-react/init/">
+                <a href="/egg-react/online/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="快速开始">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="部署流程">
                         
-                        <span class="card-title">快速开始</span>
+                        <span class="card-title">部署流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于 Egg + React + Webpack 服务端渲染开发指南1. 项目初始化1.1 通过 easywebpack-cli 脚手架初始化安装脚手架 npm install easywebpack-cli -g 命令行，然后就可以使用  easy 命令命令行运行 easy init选择 e...
+                            开发部署新项目开发在 egg-react-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 spa 目录是一个单页面服务端渲染例子，其他是简单的 Re...
                         
                     </div>
                     <div class="publish-info">
@@ -1048,19 +1049,19 @@ app<span class="token punctuation">.</span><span class="token keyword">get</span
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-react/config/">
+                <a href="/egg-react/update/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="升级更新">
                         
-                        <span class="card-title">配置说明</span>
+                        <span class="card-title">升级更新</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Webpack 标准配置
+                            发布历史https://github.com/easy-team/egg-react-webpack-boilerplate/blob/master/CHANGELOG.md版本特性easywebpack体系通过 @easy-team 模式内置 Babel 7 方案 骨架分支： master，...
                         
                     </div>
                     <div class="publish-info">
@@ -1307,12 +1308,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

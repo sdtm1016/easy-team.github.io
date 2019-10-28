@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="部署流程, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="部署流程, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="项目开发在 egg-vue-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：
 
 app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 app 目录是">
@@ -27,7 +27,13 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -175,7 +181,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -626,12 +632,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">部署流程</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">部署流程</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -663,7 +664,7 @@ app/web/page 是页面目录。下面的每个目录都是一个单独的页面�
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><p>在 <a href="https://github.com/easy-team/egg-vue-webpack-boilerplate" target="_blank" rel="noopener">egg-vue-webpack-boilerplate</a> 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：</p>
@@ -866,19 +867,19 @@ easy <span class="token function">zip</span></code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/version/">
+                <a href="/egg-vue/qpeiow/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="插件使用">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="入口实现">
                         
-                        <span class="card-title">插件使用</span>
+                        <span class="card-title">入口实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            插件流程https://easy-team.github.io/egg-vue/build插件介绍egg-webpack 用于在 egg 项目中启动 Webpack 编译服务，具体流程请见 构建流程 。 该插件只在本地启用。 该插件除了深度结合 easywebpack 体系使用， 也可...
+                            服务端渲染模式需要对同一份 vue 文件构建出两份 JSBundle 文件出来，一份给 Node 渲染使用，一份给浏览器渲染使用，但 Node 和浏览器文件初始化代码是不一样的，这就需要我们针对入口代码进行分别实现。这里提供三种实现方案，请根据项目需要选择合适的方案。方案一： 完全自定义入口代...
                         
                     </div>
                     <div class="publish-info">
@@ -903,19 +904,19 @@ easy <span class="token function">zip</span></code></pre>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/html/">
+                <a href="/egg-vue/open/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="社区作品">
                         
-                        <span class="card-title">HTML前端渲染</span>
+                        <span class="card-title">社区作品</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            游戏中心小米游戏中心easy-team https://github.com/zhqlol/edgarserverhttps://www.jianshu.com/p/71fe6197d358https://github.com/MaleWeb/FullStack_Cli
                         
                     </div>
                     <div class="publish-info">
@@ -1162,12 +1163,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

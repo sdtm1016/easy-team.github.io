@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="快速开始, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="快速开始, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="基于 Egg + React + Webpack 服务端渲染开发指南1. 项目初始化1.1 通过 easywebpack-cli 脚手架初始化
 安装脚手架 npm install easywebpack-cli -g 命令行，然后就可以使用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -174,7 +180,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -601,12 +607,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">快速开始</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">快速开始</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -638,7 +639,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="基于-Egg-React-Webpack-服务端渲染开发指南"><a href="#基于-Egg-React-Webpack-服务端渲染开发指南" class="headerlink" title="基于 Egg + React + Webpack 服务端渲染开发指南"></a>基于 Egg + React + Webpack 服务端渲染开发指南</h2><h2 id="1-项目初始化"><a href="#1-项目初始化" class="headerlink" title="1. 项目初始化"></a>1. 项目初始化</h2><h3 id="1-1-通过-easywebpack-cli-脚手架初始化"><a href="#1-1-通过-easywebpack-cli-脚手架初始化" class="headerlink" title="1.1 通过 easywebpack-cli 脚手架初始化"></a>1.1 通过 <a href="https://github.com/easy-team/easywebpack-cli" target="_blank" rel="noopener">easywebpack-cli</a> 脚手架初始化</h3><ol>
@@ -985,19 +986,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/case/">
+                <a href="/egg-react/html/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="项目一览">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
                         
-                        <span class="card-title">项目一览</span>
+                        <span class="card-title">HTML前端渲染</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + Vue 服务端渲染项目地址：https://github.com/easy-team/egg-vue-webpack-boilerplateEgg + Vue 前端渲染项目地址：https://github.com/easy-team/egg-vue-webpack-boilerplat...
+                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
                         
                     </div>
                     <div class="publish-info">
@@ -1022,19 +1023,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-react/start/">
+                <a href="/egg-react/babel/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="从零开始">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Babel 配置">
                         
-                        <span class="card-title">从零开始</span>
+                        <span class="card-title">Babel 配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            从零开始搭建 Egg + React + Webpack 服务端渲染项目1. 初始化环境安装 Node LST (8.x.x) 环境： https://nodejs.org/zh-cn2. 初始化 egg 项目https://github.com/eggjs/egg-init/blob/mas...
+                            在进行 Egg + React 进行 SSR 模式开发时，运行 npm run dev  后你会看到如下界面， 启动了两个 Webpack 构建实例：Node 模式 和 Web 模式。
                         
                     </div>
                     <div class="publish-info">
@@ -1281,12 +1282,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

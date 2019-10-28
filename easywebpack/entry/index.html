@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="entry, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="entry, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="entry 基本配置config.entry : {String|Object}  Webpack 构建入口文件配置
 这里的entry 对 Webpack 的 entry 进行了增强， 除了支持 webpack 原生 Object(key:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -174,7 +180,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -991,12 +997,7 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">entry</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">entry</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
@@ -1028,7 +1029,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <h2 id="entry-基本配置"><a href="#entry-基本配置" class="headerlink" title="entry 基本配置"></a>entry 基本配置</h2><p><strong>config.entry</strong> : {String|Object}  Webpack 构建入口文件配置</p>
@@ -1215,19 +1216,27 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/babel/">
+                <a href="/easywebpack/css/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Babel 配置">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Css Style">
                         
-                        <span class="card-title">Babel 配置</span>
+                        <span class="card-title">Css Style</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Babel 版本说明easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。方式一：使用 @easy-team 插件依赖为了更方便升级 Babel7, 同...
+                            开启 Sass （默认禁用）
+webpack.config.js
+
+// ${app_root}/webpack.config.js
+module.exports = {
+  module:{
+     rules:[
+       {
+ 
                         
                     </div>
                     <div class="publish-info">
@@ -1252,19 +1261,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/html/">
+                <a href="/easywebpack/hot/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="静态页面构建">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="热更新">
                         
-                        <span class="card-title">静态页面构建</span>
+                        <span class="card-title">热更新</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            nunjucks 模板构建为纯静态页面项目基于 easywebpack-cli 方式构建在用 HTML 模板构建时, 有一个不好的地方就是不能以组件的方式复用, 如是考虑通过渲染模版编译成HTML静态模版. 目前常见的模板引擎有 nunjucks 等渲染模板, 而且社区也有对应的 Webpack loader 支持. 同时 easywebpack-html 也内置支持了, 我们执行只需要打开开关即可.在项目根目录添加 webpack.config.js 文件中启动 nunjucks loader...
+                            easywebpack 是通过 koa-webpack-hot-middleware 和 koa-webpack-dev-middleware 插件实现热更新机制。具体实现封装成独立 webpack-tool 插件，该插件除了集成在 easywebpack 里面，同时也可以单独使用。下面详细说...
                         
                     </div>
                     <div class="publish-info">
@@ -1511,12 +1520,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

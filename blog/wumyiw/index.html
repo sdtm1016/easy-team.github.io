@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Egg 项目集成 Webpack 热更新, node, egg, webpack, ves, res, ssr">
+    <meta name="keywords" content="Egg 项目集成 Webpack 热更新, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
     <meta name="description" content="在 Egg + React 工程化解决方案 和 Egg + Vue 工程化解决方案 方案使用了 egg-webpack 实现了 Egg + easywebpack 热更新统一处理。其实 egg-webpack 是可以单独使用的，不耦合 ea">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-    
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -173,7 +179,7 @@
         <div class="logo-name">easy-team</div>
         <div class="logo-desc">
             
-            前端工程化,Node开发,Webpack,Egg,React Server Side Render, Vue Server Side Render
+            Node, 前端工程化, 多端技术
             
         </div>
     </div>
@@ -715,17 +721,12 @@
     <div class="doc-right-nav">
         <div class="card" class="doc-right-card">
             <div class="card-content article-info">
-                <h1 style="margin-top: 12px;">Egg 项目集成 Webpack 热更新</h1>
-                <div class="row">
-                    <div class="col s5 right-align">
-                        
-                    </div>
-                </div>
+                <h1 style="margin-top: 12px; text-align: center;">Egg 项目集成 Webpack 热更新</h1>
                 
                 <div class="post-info">
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>Date:&nbsp;&nbsp;
-                        2019-10-19
+                        2019-10-20
                     </div>
     
                     
@@ -752,7 +753,7 @@
                     
                 </div>
             </div>
-            <hr class="clearfix">
+            <hr class="clearfix" style="margin: 0px 0px;">
             <div class="card-content article-card-content" style="padding-top: 0px;">
                 <div id="articleContent">
                     <p><br />在 <a href="https://easy-team.github.io/egg-react">Egg + React 工程化解决方案</a> 和 <a href="/egg-vue">Egg + Vue 工程化解决方案</a> 方案使用了 <a href="https://github.com/easy-team/egg-webpack" target="_blank" rel="noopener">egg-webpack</a> 实现了 Egg + easywebpack 热更新统一处理。其实 egg-webpack 是可以单独使用的，不耦合 easywebpack 构建配置。下面以 Egg + React + Webpack 为例。</p>
@@ -1062,24 +1063,24 @@ module<span class="token punctuation">.</span>exports <span class="token operato
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/blog/tmiwa7/">
+                <a href="/easywebpack/abtuv0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Egg + Webpack 自定义前端渲染">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="基础配置">
                         
-                        <span class="card-title">Egg + Webpack 自定义前端渲染</span>
+                        <span class="card-title">基础配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            在使用相关方案时, 请在项目中添加 babel  和 postcss  基础配置文件添加
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
                         </span>
                         <span class="publish-author">
                             
@@ -1099,24 +1100,31 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/blog/wp0na4/">
+                <a href="/easywebpack/allconfig/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="轻轻松松搞定 Webpack 项目构建">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="全部配置项">
                         
-                        <span class="card-title">轻轻松松搞定 Webpack 项目构建</span>
+                        <span class="card-title">全部配置项</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于 easywebpack 工程体系，你能非常简单，快速的编写出 webpack 复杂的配置，你无需过多关心热更新，是否压缩，是否Hash，公共JS/CSS，DLL，构建速度等问题，这些 easywebpack 都已经帮你解决和优化了。easywebpack 提供 Vue/React/JS/...
+                            webpack.config.js 参数配置说明// ${app_root}/webpack.config.js
+module.exports = {
+  framework: 'html'
+  entry:{
+
+  }
+  ......
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
                             </span>
                         <span class="publish-author">
                             
@@ -1358,12 +1366,7 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
