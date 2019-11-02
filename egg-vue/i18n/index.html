@@ -4,12 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="i18n 国际化支持, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
-    <meta name="description" content="在 Egg + Vue  SSR 方案中，可以使用 vue-i18n 实现国际化支持， 使用前请先阅读以下文档：
-
-http://kazupon.github.io/vue-i18n/guide/started.html#html
-
-htt">
+    <meta name="keywords" content="Egg Vue SSR, Egg Vue CSR, Egg Vue Server Side Render,Egg Vue SSR/CSR 工程方案-i18n 国际化支持, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
+    <meta name="description" content="Egg Vue SSR/CSR 工程方案,在 Egg + Vue  SSR 方案中，可以使用 vue-i18n 实现国际化支持， 使用前请先阅读以下文档：http://kazupon.github.io/vue-i18n/guide/started.html#htmlhttp://kazupon.github.io/vue-i18n/guide/started.html#javascriptEgg + Vue 实现国际化安装依赖npm install vue-i18n --save 编写 cn 和 en 语言文件中文配置：egg-vue...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +13,7 @@ htt">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>i18n 国际化支持 | easy-team</title>
+    <title>Egg Vue SSR/CSR 工程方案-i18n 国际化支持 | easy-team</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -878,19 +874,19 @@ exports<span class="token punctuation">.</span>middleware <span class="token ope
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/online/">
+                <a href="/egg-vue/fls9r6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="部署流程">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自定义前端渲染">
                         
-                        <span class="card-title">部署流程</span>
+                        <span class="card-title">自定义前端渲染</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            项目开发在 egg-vue-webpack-boilerplate 骨架项目中, 提供了一些demo, 如果要进行新项目开发，可以删除部分文件：app/web/page 是页面目录。下面的每个目录都是一个单独的页面，其中 app 目录是一个单页面服务端渲染例子，其他是简单的 Vue 服务端渲染...
+                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
                         
                     </div>
                     <div class="publish-info">
@@ -915,19 +911,19 @@ exports<span class="token punctuation">.</span>middleware <span class="token ope
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/html/">
+                <a href="/egg-vue/config/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="HTML前端渲染">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
                         
-                        <span class="card-title">HTML前端渲染</span>
+                        <span class="card-title">配置说明</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 和 asset 渲染模式 章节讲到了基于 React 的前端渲染模式，但都依赖  egg-view-react-ssr 插件，那如何基于已有 egg 模板引擎 (egg-view-nunjucks 或 egg-view-ejs) + Webpack 完全自定义前端方案呢？...
+                            webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
                         
                     </div>
                     <div class="publish-info">

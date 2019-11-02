@@ -4,12 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="相关问题, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
-    <meta name="description" content="常见问题 issue 汇总
-服务端 SEO 设置问题 
-文件打包部署问题
-
-Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-">
+    <meta name="keywords" content="Egg Vue SSR, Egg Vue CSR, Egg Vue Server Side Render,Egg Vue SSR/CSR 工程方案-相关问题, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
+    <meta name="description" content="Egg Vue SSR/CSR 工程方案,常见问题 issue 汇总服务端 SEO 设置问题 文件打包部署问题Server Side Render 时，$mount节点重新渲染问题see issue：https://github.com/easy-team/egg-vue-webpack-boilerplate/issues/125a...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +13,7 @@ Server Side Render 时，$mount节点重新渲染问题see issue：https://githu
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>相关问题 | easy-team</title>
+    <title>Egg Vue SSR/CSR 工程方案-相关问题 | easy-team</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -843,19 +839,19 @@ exports<span class="token punctuation">.</span>webpack <span class="token operat
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/egg-vue/config/">
+                <a href="/egg-vue/babel/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="配置说明">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Babel 构建优化">
                         
-                        <span class="card-title">配置说明</span>
+                        <span class="card-title">Babel 构建优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webpack.config.jseasywebpack@4.8.0 开始支持，因为有了默认配置，所以最新的骨架项目中，webpack.config.js 文件为非必须配置。使用 node-glob 遍历文件。下面配置会自动遍历 app/web/page  目录的所有 .vue 文件作为 en...
+                            在进行 Egg + Vue 进行 SSR 模式开发时，运行 npm run dev  后你会看到如下界面， 启动了两个 Webpack 构建实例：Node 模式 和 Web 模式。
                         
                     </div>
                     <div class="publish-info">
@@ -880,19 +876,19 @@ exports<span class="token punctuation">.</span>webpack <span class="token operat
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/asset/">
+                <a href="/egg-vue/async/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="asset 渲染模式">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="异步加载">
                         
-                        <span class="card-title">asset 渲染模式</span>
+                        <span class="card-title">异步加载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背景在 前端渲染模式 章节讲到了基于 Vue 的一体化的前端渲染模式，好处是不需要借助第三方模板引擎且无需关注静态资源注入问题，但有两个小的功能限制：layout 模板数据绑定能力较弱资源注入不能自己定义，比如 async， crossorigin 等配置针对上面问题 egg-view-vue...
+                            Component Async Load Render / 组件异步加载渲染1. JavaScript File Code Spliting 代码分离Webpack打包是把所有js代码打成一个js文件，我们可以通过 CommonsChunkPlugin 分离出公共组件，但这远远不够。 实际业务...
                         
                     </div>
                     <div class="publish-info">

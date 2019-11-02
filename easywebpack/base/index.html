@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="扩展配置, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
-    <meta name="description" content="webpack.config.js 常用配置1. Egg框架配置  (扩展简化配置)config.egg : {Boolean} 特殊参数,  Egg SSR 构建时使用。easywebpack 4.8.0 无需配置，已支持自动检测
-
-使用">
+    <meta name="keywords" content="webpack,easywebpack,webpack react,webpack vue,webpack weex,webpack-dev-server,基于 Webpack 前端工程构建方案-扩展配置, 前端工程化, node, egg, webpack, easywebpack, ves, res, ssr, react server side render, vue server side render">
+    <meta name="description" content="基于 Webpack 前端工程构建方案,webpack.config.js 常用配置1. Egg框架配置">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>扩展配置 | easy-team</title>
+    <title>基于 Webpack 前端工程构建方案-扩展配置 | easy-team</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -1204,19 +1202,27 @@ module<span class="token punctuation">.</span>exports<span class="token operator
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/easywebpack/config/">
+                <a href="/easywebpack/css/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="webpack.config.js">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Css Style">
                         
-                        <span class="card-title">webpack.config.js</span>
+                        <span class="card-title">Css Style</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            webpack.config.js
+                            开启 Sass （默认禁用）
+webpack.config.js
+
+// ${app_root}/webpack.config.js
+module.exports = {
+  module:{
+     rules:[
+       {
+ 
                         
                     </div>
                     <div class="publish-info">
@@ -1241,19 +1247,19 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/easywebpack/babel/">
+                <a href="/easywebpack/cdn/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Babel 配置">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CDN 构建">
                         
-                        <span class="card-title">Babel 配置</span>
+                        <span class="card-title">CDN 构建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Babel 版本说明easywebpack 体系目前内置 Babel 为 6 ，因涉及底层改动以及兼容等问题，为了保证现有已经运行项目的稳定性，暂还没有从框架层进行内置修改，目前提供两种方式进行升级 Babel 7。方式一：使用 @easy-team 插件依赖为了更方便升级 Babel7, 同...
+                            基本配置easywebpack 提供了 cdn 配置节点, 只需要配置 cdn 地址即可(cdn地址会覆盖publicPath地址).配置如下:easywebpack3 配置后 dev，test， prod 模式都会生效, 一般通过变量控制 cdn 节点的配置
                         
                     </div>
                     <div class="publish-info">
