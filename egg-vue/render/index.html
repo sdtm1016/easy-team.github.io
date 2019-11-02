@@ -903,19 +903,19 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/egg-vue/pwa/">
+                <a href="/egg-vue/qpeiow/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Service Worker">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="入口实现">
                         
-                        <span class="card-title">Service Worker</span>
+                        <span class="card-title">入口实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Egg + Vue/React SSR 使用 service workereasywebpack 默认生成的 service-worker.js 是在 ${app_root}/public/service-worker.js这里. 这样 service-worker.js 访问路径是 http://127.0.0.1:7001/public/service-worker.js。将 service worker 文件注册为 /public/service-worker.js，那么，service...
+                            服务端渲染模式需要对同一份 vue 文件构建出两份 JSBundle 文件出来，一份给 Node 渲染使用，一份给浏览器渲染使用，但 Node 和浏览器文件初始化代码是不一样的，这就需要我们针对入口代码进行分别实现。这里提供三种实现方案，请根据项目需要选择合适的方案。方案一： 完全自定义入口代...
                         
                     </div>
                     <div class="publish-info">
